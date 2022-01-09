@@ -1,0 +1,28 @@
+
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]=1>
+        <a ngbNavBrand routerLink="/">O</a>   
+       
+      </li>
+
+    <li [ngbNavItem]=1>
+      <a ngbNavLink routerLink="/">Home</a>     
+    </li>
+    <li [ngbNavItem]=2>
+      <a ngbNavLink routerLink="/shooping-cart">Shooping Cart</a>
+      
+    </li>
+    <li [ngbNavItem]=3 ngbDropdown>
+      <a ngbNavLink ngbDropdownToggle  id="dropdown01">User Name</a>
+      <div ngbDropdownMenu aria-labelledby="dropdown01">
+        <a ngbDropdownItem routerLink="/orders" >My Orders</a>
+        <a ngbDropdownItem routerLink="/admin/orders" >Manage Orders</a>
+        <a ngbDropdownItem routerLink="/admin/products" >Manage Products</a>
+        <a ngbDropdownItem routerLink="/" >LogOut</a>
+      </div>
+      
+    </li>
+  </ul>
+ 
+  
+  
